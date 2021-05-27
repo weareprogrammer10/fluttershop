@@ -11,7 +11,7 @@ class _LoginPageState extends State<LoginPage> {
   String name = " ";
   bool changeButton = false;
 
-  final _formkey = GlobalKey<FormState>();
+  final  _formkey = GlobalKey<FormState>();
    
   moveToHome(BuildContext context) async {
 
@@ -64,6 +64,8 @@ class _LoginPageState extends State<LoginPage> {
                     TextFormField(
                       decoration: InputDecoration(
                           hintText: "Enter Username", labelText: "Username"),
+                          // !Validator which checks given input is valid or not according to the rules 
+
                       validator: (value) {
                         if (value.isEmpty) {
                           return "Username Cannot be empty";

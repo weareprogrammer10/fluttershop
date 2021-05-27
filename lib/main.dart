@@ -10,12 +10,13 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(      
+    return MaterialApp(     
+      debugShowCheckedModeBanner: false, 
         // home:HomePage(),
         themeMode:ThemeMode.light,
 
         theme:ThemeData(
-          primarySwatch: Colors.purple,
+          primarySwatch: Colors.teal,
           fontFamily: GoogleFonts.lato().fontFamily  //Changes the font of apk
 
           // primaryTextTheme: GoogleFonts.latoTextTheme()
@@ -26,7 +27,7 @@ class MyApp extends StatelessWidget {
         //   brightness: Brightness.dark,
         // ),
         
-        // initialRoute: '/home',
+        initialRoute: '/home',
         routes: {
           "/": (context) =>LoginPage(),
           MyRoutes.homeRoute: (context) =>HomePage(),
