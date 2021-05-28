@@ -39,6 +39,7 @@ class MyDrawer extends StatelessWidget {
                 ),
 
                   ListTile(
+                  dense: true,
                   leading: Icon(
                     CupertinoIcons.home,
                     color: Colors.white,
